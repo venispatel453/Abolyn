@@ -1,0 +1,95 @@
+.page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: filter 0.3s ease-in-out; /* Add transition effect */
+  }
+  h1{
+    font-size: 50px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  .upper {
+    display: flex;
+    width: 100%;
+  }
+  
+  .left-section {
+    flex: 0 0 60%; /* 60% width */
+    padding-left: 75px;
+  }
+  
+  .right-section {
+    flex: 1; /* Take remaining space */
+  }
+  
+  .search-bar {
+    display: flex;
+    width: 90%; /* Adjust margin from left and right */
+    margin: 0 auto; /* Center the search bar */
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 7px; /* Adjust as needed */
+    margin-bottom: 35px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative; /* Ensure search-bar remains visible on top of blurred content */
+  }
+  
+  .textarea {
+    flex: 0 0 75%; /* 75% width */
+    border: none;
+  }
+  
+  .delivery-zip {
+    flex: 0 0 15%; /* 15% width */
+    margin-left: 10px; /* Adjust margin as needed */
+  }
+  
+  .search-button {
+    flex: 0 0 10%;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height:65px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border:1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .wrapper.blur-background {
+    filter: blur(5px);
+  }
+  
+  .blurred {
+    filter: blur(10px); /* Apply blur effect */
+  }
+  .blur-background {
+    filter: blur(5px);
+  }
+  .upper.blurred {
+    filter: blur(5px); /* Apply blur effect */
+  }
+    
+  textarea:focus{
+    box-shadow: 0 0 0 0.1rem green;
+  }
+  .search-bar {
+    /* your existing styles */
+    position: relative; /* Ensure search-bar remains visible on top of blurred content */
+    transition: top 0.3s ease-in-out; /* Add transition effect for top position */
+  }
+  
+  .search-bar.active {
+    top: -350px; /* Adjust the top position as per your requirement */
+  }
+  

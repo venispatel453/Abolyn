@@ -1,0 +1,46 @@
+.footer {
+    margin-bottom: 0px;
+  background-color: #343a3f;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  width: 100vm;
+}
+
+.left{
+    padding-left: 25px;
+}
+
+.footer .right {
+display: flex;
+}
+
+.footer .right #youtube {
+    padding-right: 15px;
+}
+
+.footer .right #facebook {
+    padding-right: 15px;
+}
+
+.footer .right #twitter {
+    padding-right: 15px;
+}
+
+.footer .right #instagram {
+    padding-right: 15px;
+}
+
+.footer .right #linkedin {
+    padding-right: 100px;
+}
+a{
+    color:white
+}
+a:hover {
+    color: rgb(73, 75, 190);
+}
